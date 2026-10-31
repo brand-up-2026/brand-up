@@ -1,0 +1,22 @@
+{
+  "background_color": "#ffffff",
+  "dir": "rtl",
+  "display": "standalone",
+  "name": "Brand Up",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "BrandUp",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "brandup",
+  "description": "Digital agency for design and marketing",
+  "lang": "ar"
+}

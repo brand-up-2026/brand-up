@@ -1,22 +1,17 @@
 {
-  "background_color": "#ffffff",
-  "dir": "rtl",
-  "display": "standalone",
   "name": "Brand Up",
-  "orientation": "any",
-  "scope": "/",
   "short_name": "BrandUp",
   "start_url": "/",
-  "theme_color": "#ffffff",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "وكالة براند أب للتصميم والتسويق الرقمي",
   "icons": [
     {
-      "src": "/icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     }
-  ],
-  "id": "brandup",
-  "description": "Digital agency for design and marketing",
-  "lang": "ar"
+  ]
 }
+

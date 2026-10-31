@@ -5,7 +5,7 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
-  "description": "وكالة براند أب للتصميم والتسويق الرقمي",
+ "description": "Brand Up Digital Agency",
   "icons": [
     {
       "src": "icon-512.png",
@@ -14,4 +14,3 @@
     }
   ]
 }
-

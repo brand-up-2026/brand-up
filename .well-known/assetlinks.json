@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.brand_up_2026.twa",
+        "sha256_cert_fingerprints": ["C5:1D:35:81:D9:27:06:36:48:8D:1D:5C:21:1E:D2:9D:A3:D4:73:DA:C6:86:DD:4F:FB:D3:71:76:CF:1B:75:42"]
+      }
+    }]

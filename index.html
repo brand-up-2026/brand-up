@@ -335,9 +335,89 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
         }
+        .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.portfolio-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
     </style>
 </head>
 <body>
+    <!-- قسم معرض الأعمال (Portfolio) -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>معرض أعمالنا</h2>
+            <p class="subtitle">نماذج حية تعكس جودة مشاريعنا الرقمية</p>
+            
+            <div class="portfolio-grid">
+                <!-- النموذج الأول: شبكات الإنترنت -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                        <img src="appstore-images/1795658940313.png" alt="واجهة شبكات الإنترنت">
+                    </div>
+                    <div class="card-content">
+                        <h3>شبكات الإنترنت (MikroTik)</h3>
+                        <p>تصميم واجهات تسجيل دخول مخصصة، عصرية وسريعة الاستجابة لشبكات الواي فاي.</p>
+                    </div>
+                </div>
+
+                <!-- النموذج الثاني: مواقع الاستراحات -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                       <img src="appstore-images/1795659657889.jpg" alt="مواقع الاستراحات والمنتجعات">
+                    </div>
+                    <div class="card-content">
+                        <h3>مواقع الاستراحات والمنتجعات</h3>
+                        <p>تصميم مواقع سياحية متكاملة تعرض المرافق وخدمات الحجز الإلكتروني المباشر.</p>
+                    </div>
+                </div>
+
+                <!-- النموذج الثالث: الهويات البصرية -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                        <img src="appstore-images/1795659741433.jpg" alt="الهويات البصرية والأعمال">
+
+                    </div>
+                    <div class="card-content">
+                        <h3>الهويات البصرية والأعمال</h3>
+                        <p>تصميم شعارات احترافية، بطاقات عمل، وأدلة متكاملة للتعريف بالشركات والمؤسسات.</p>
+                    </div>
+                </div>
+
+                <!-- النموذج الرابع: واجهات التطبيقات -->
+                <div class="portfolio-card">
+                    <div class="card-image">
+                        <img src="appstore-images/1795659694378.jpg" alt="تصاميم واجهات التطبيقات">
+
+                    </div>
+                    <div class="card-content">
+                        <h3>تصاميم واجهات التطبيقات (UI/UX)</h3>
+                        <p>تطوير واجهات مستخدم سلسة وعصرية للمتاجر الإلكترونية وتطبيقات الموبايل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Header -->
     <header>
@@ -511,8 +591,114 @@
             updateCount();
         });
     </script>
+<!-- قسم آراء العملاء وتجارب النجاح - Brand Up -->
+<section id="testimonials" style="padding: 50px 20px; background-color: #0b0f15; color: #ffffff; text-align: center; font-family: sans-serif; border-top: 1px solid #30363d;">
+  <div style="max-width: 900px; margin: 0 auto;">
+    
+    <h2 style="color: #2f81f7; margin-bottom: 10px; font-size: 26px;">آراء العملاء الذين وثقوا بنا</h2>
+    <p style="color: #8b949e; font-size: 14px; margin-bottom: 35px;">قصص نجاح ونماذج حقيقية لعملاء طورنا أعمالهم الرقمية</p>
+
+    <!-- حاوية البطاقات -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; text-align: right;">
+      
+      <!-- العميل الأول -->
+      <div style="background: #161b22; padding: 25px; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
+        <div style="color: #f0883e; font-size: 18px; margin-bottom: 10px;">★★★★★</div>
+        <p style="color: #e6edf3; font-size: 14px; line-height: 1.6; margin-bottom: 15px;">"تم تصميم موقعنا بشكل احترافي وخلال وقت قياسي جداً. الدعم الفني والمتابعة كانت ممتازة، أنصح بالتعامل مع وكالة Brand Up بشدة!"</p>
+        <span style="font-size: 13px; color: #2f81f7; font-weight: bold;">- أحمد العمري (مدير متجر إلكتروني)</span>
+      </div>
+
+      <!-- العميل الثاني -->
+      <div style="background: #161b22; padding: 25px; border-radius: 14px; border: 1px solid #30363d; box-shadow: 0 4px 16px rgba(0,0,0,0.3);">
+        <div style="color: #f0883e; font-size: 18px; margin-bottom: 10px;">★★★★★</div>
+        <p style="color: #e6edf3; font-size: 14px; line-height: 1.6; margin-bottom: 15px;">"أفضل تجربة برمجة وتصميم واجهات موبايل. الهوية البصرية التي بنوها لنا رفعت من مبيعاتنا بشكل ملحوظ."</p>
+        <span style="font-size: 13px; color: #2f81f7; font-weight: bold;">- خالد القحطاني (رائد أعمال)</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+ <!-- قسم حاسبة تقدير الخدمات - Brand Up -->
+<section id="pricing-estimator" style="padding: 50px 20px; background-color: #0d1117; color: #ffffff; text-align: center; font-family: sans-serif;">
+  <div style="max-width: 600px; margin: 0 auto; background: #161b22; padding: 30px; border-radius: 16px; border: 1px solid #30363d; box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+    
+    <h2 style="color: #2f81f7; margin-bottom: 10px; font-size: 24px;">احسب تكلفة مشروعك تقريبياً</h2>
+    <p style="color: #8b949e; font-size: 14px; margin-bottom: 25px;">حدد الخدمات التي تحتاجها للحصول على تقدير فوري لمشروعك</p>
+
+    <!-- اختيار الخدمة -->
+    <div style="text-align: right; margin-bottom: 20px;">
+      <label style="display: block; font-weight: bold; margin-bottom: 8px; color: #e6edf3;">1. اختر الخدمة الأساسية:</label>
+      <select id="service-type" onchange="calculateTotal()" style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #30363d; background: #0d1117; color: #fff; font-size: 15px; outline: none;">
+        <option value="0">-- اختر الخدمة --</option>
+        <option value="150">تصميم وتطوير موقع إلكتروني</option>
+        <option value="100">بناء هوية بصرية وتصاميم</option>
+        <option value="200">إدارة وتسويق محتوى (شهري)</option>
+      </select>
+    </div>
+
+    <!-- ميزات إضافية -->
+    <div style="text-align: right; margin-bottom: 25px;">
+      <label style="display: block; font-weight: bold; margin-bottom: 8px; color: #e6edf3;">2. إضافات اختيارية:</label>
+      <div style="background: #0d1117; padding: 12px; border-radius: 8px; border: 1px solid #30363d;">
+        <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; cursor: pointer;">
+          <span>تهيئة تحسين محركات البحث (SEO)</span>
+          <input type="checkbox" id="opt-seo" value="50" onchange="calculateTotal()" style="accent-color: #2f81f7; transform: scale(1.2);">
+        </label>
+        <label style="display: flex; align-items: center; justify-content: space-between; cursor: pointer;">
+          <span>تسليم عاجل للمشروع</span>
+          <input type="checkbox" id="opt-fast" value="40" onchange="calculateTotal()" style="accent-color: #2f81f7; transform: scale(1.2);">
+        </label>
+      </div>
+    </div>
+
+    <!-- المجموع التقديري -->
+    <div style="background: rgba(47, 129, 247, 0.1); border: 1px solid #2f81f7; border-radius: 12px; padding: 15px; margin-bottom: 25px;">
+      <span style="font-size: 16px; color: #8b949e;">التكلفة التقديرية:</span>
+      <div id="total-price" style="font-size: 32px; font-weight: bold; color: #2f81f7; margin-top: 5px;">0 $</div>
+    </div>
+
+    <!-- زر طلب الخدمة -->
+    <button onclick="submitEstimate()" style="width: 100%; padding: 14px; background: #238636; color: #ffffff; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s;">
+      أرسل الطلب بهذه التفاصيل 🚀
+    </button>
+
+  </div>
+</section>
+
+<!-- السكريبت التفاعلي -->
+<script>
+  function calculateTotal() {
+    let serviceSelect = document.getElementById('service-type');
+    let basePrice = parseInt(serviceSelect.value) || 0;
+    
+    let seoPrice = document.getElementById('opt-seo').checked ? parseInt(document.getElementById('opt-seo').value) : 0;
+    let fastPrice = document.getElementById('opt-fast').checked ? parseInt(document.getElementById('opt-fast').value) : 0;
+    
+    let total = basePrice + seoPrice + fastPrice;
+    document.getElementById('total-price').innerText = total + ' $';
+  }
+
+  function submitEstimate() {
+    let serviceSelect = document.getElementById('service-type');
+    if (serviceSelect.value === "0") {
+      alert('يرجى اختيار الخدمة الأساسية أولاً!');
+      return;
+    }
+    
+    // الانتقال المباشر لفرع التواصل أو إرسال نموذج
+    let total = document.getElementById('total-price').innerText;
+    let serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+    
+    let message = `مرحباً Brand Up، أود طلب خدمة (${serviceText}) بالتكلفة التقديرية (${total})`;
+    window.location.href = `https://wa.me/967775541163?text=${encodeURIComponent(message)}`;
+  }
+</script>
+
 </body>
 </html>
+
 
 
 
